@@ -1,0 +1,657 @@
+/*===================================================
+===================================================
+Template Name: Lura - Responsive Minimal Coming Soon Template
+Theme URI: http://mcnika.com/html/lura/
+Author: mcnika
+Author URI: http://mcnika.com
+Description: Lura is a fully responsive, creative, clean and modern minimal coming soon template where you can present your upcoming site begin collecting subscribers before the launch. Lura based on Bootstrap framework. It comes with different versions and ready demos.
+Version: 1.0
+Tags: bootstrap3, creative, slideshow, background, jquery, responsive, corporation, countdown, creative, clean, one-page, business, under maintenance, under construction, minimal
+===================================================
+===================================================
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 General 
+2.0 Section
+    2.1 Section - Light
+    2.2 Section - Dark
+3.0 Countdown
+4.0 Forms
+5.0 Footer
+6.0 Media queries
+--------------------------------------------------------------*/
+
+/* =================================================== */
+/*      1.0 General 
+/* =================================================== */
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+
+    overflow-x: hidden;
+
+    background: gray;
+}
+
+a
+{
+    transition: all .2s linear;
+
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    position: relative;
+
+    margin: 0 0 15px;
+
+    text-transform: uppercase;
+}
+
+h1
+{
+    font-size: 34px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 34px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+h2
+{
+    letter-spacing: 5px;
+}
+
+p
+{
+    font-size: 16px;
+    line-height: 30px;
+
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.separator
+{
+    width: 200px;
+    height: 2px;
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+
+.center
+{
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.center .separator
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center p
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.social-icon li
+{
+    margin-bottom: 10px;
+}
+
+/*** solid color ***/
+
+.solid-color
+{
+    background: #00245e;
+}
+
+/*** video background ***/
+
+.kenburned-background
+{
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+/*** video background ***/
+
+.video-background
+{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.ytplayer-container
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    height: 100%;
+}
+
+/*** polygons ***/
+
+.polygons
+{
+    position: fixed;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/*** [reloader ***/
+.loader
+{
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background: url('../images/loader.gif') center center no-repeat #fff;
+}
+
+/* =================================================== */
+/*      2.0 Section
+/* =================================================== */
+
+.section
+{
+    display: table;
+
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    table-layout: fixed;
+}
+
+.section-cell
+{
+    display: table-cell;
+
+    width: 100%;
+    height: 100%;
+
+    vertical-align: middle;
+}
+
+.section-container
+{
+    width: 70%;
+    padding: 100px;
+}
+
+/* =================================================== */
+/*      2.1 Section - Light
+/* =================================================== */
+
+.bg-light
+{
+    background: #fff;
+}
+
+.section-light
+{
+    color: #fff;
+}
+
+.section-light a
+{
+    color: #969da1;
+}
+
+.section-light.section-home .section-container
+{
+    background: rgba(0, 0, 0, .7);
+}
+
+.section-light .separator
+{
+    background: #fff;
+}
+
+.section-light .btn
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+.section-light .btn:hover,
+.section-light .btn:focus
+{
+    color: #333;
+    background: #fff;
+}
+
+.section-light .social-icon li a
+{
+    color: #333;
+    background: #fff;
+}
+
+.section-light .social-icon li a:hover
+{
+    color: #fff;
+    background: none;
+}
+
+.section-light .form-control
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+.section-light .form-control:focus
+{
+    border-color: #fff;
+}
+
+.section-light .btn-newsletter
+{
+    color: #333;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.section-light .btn-newsletter:hover,
+.section-light .btn-newsletter:focus
+{
+    color: #fff;
+    background: none;
+}
+
+.section-light .countdown ul
+{
+    color: rgba(255,255,255,.5);
+}
+
+.section-light .countdown .day
+{
+    color: #fff;
+    border-color: rgba(255, 255, 255, .5);
+}
+
+/* =================================================== */
+/*      2.2 Section - Dark
+/* =================================================== */
+
+.bg-dark
+{
+    background: #333;
+}
+
+.section-dark
+{
+    color: #333;
+}
+
+.section-dark a
+{
+    color: #969da1;
+}
+
+.section-dark.section-home .section-container
+{
+    background: rgba(255, 255, 255, .7);
+}
+
+.section-dark .separator
+{
+    background: #333;
+}
+
+.section-dark .btn
+{
+    color: #333;
+    border-color: #333;
+}
+
+.section-dark .btn:hover,
+.section-dark .btn:focus
+{
+    color: #fff;
+    background: #333;
+}
+
+.section-dark .social-icon li a
+{
+    color: #fff;
+    background: #333;
+}
+
+.section-dark .social-icon li a:hover
+{
+    color: #333;
+    background: none;
+}
+
+.section-dark .form-control
+{
+    color: #333;
+    border-color: #333;
+}
+
+.section-dark .form-control:focus
+{
+    border-color: #333;
+}
+
+.section-dark .btn-newsletter
+{
+    color: #fff;
+    border: 2px solid #333;
+    background-color: #333;
+}
+
+.section-dark .btn-newsletter:hover,
+.section-dark .btn-newsletter:focus
+{
+    color: #333;
+    background: none;
+}
+
+.section-dark .countdown ul
+{
+    color: rgba(51,51,51,.5);
+}
+
+.section-dark .countdown .day
+{
+    color: #333;
+    border-color: rgba(0, 0, 0, .1);
+}
+
+/* =================================================== */
+/*      3.0 Countdown
+/* =================================================== */
+
+.countdown ul
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    float: left;
+
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.countdown li
+{
+    display: inline-block;
+
+    padding-right: 17px;
+}
+
+.countdown .day
+{
+    font-size: 45px;
+    line-height: 45px;
+
+    float: left;
+
+    padding-right: 20px;
+
+    border-right: 1px solid;
+}
+
+.countdown:before,
+.countdown:after
+{
+    display: table;
+
+    content: '';
+}
+
+.countdown:after
+{
+    clear: both;
+}
+
+/* =================================================== */
+/*      4.0 Forms
+/* =================================================== */
+
+.btn,
+.form-control,
+.form-control:hover,
+.form-control:focus
+{
+    box-shadow: none;
+}
+
+.form-control
+{
+    height: 46px;
+
+    transition: all .3s cubic-bezier(.3, .1, .58, 1) 0s;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    background: none;
+}
+
+.form-control:focus
+{
+    border-color: #111;
+}
+
+.btn
+{
+    padding: 12px 30px;
+
+    text-transform: uppercase;
+
+    border-radius: 0;
+}
+
+.btn-main
+{
+    font-size: 12px;
+    font-size: 10px;
+    font-weight: 700;
+
+    margin-top: 35px;
+
+    letter-spacing: 2px;
+
+    color: black;
+    border: 2px solid #333;
+}
+
+.btn-main:hover,
+.btn-main:focus
+{
+    color: #fff;
+    background: #333;
+}
+
+.newsletter
+{
+    position: relative;
+
+    margin-top: 20px;
+}
+
+.btn-newsletter
+{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    padding: 8px 30px;
+
+    letter-spacing: 4px;
+}
+
+.form-error
+{
+    border-color: #f00!important;
+}
+
+.alert-message
+{
+    font-style: italic;
+}
+
+.alert-message .error
+{
+    color: #f00;
+}
+
+/* =================================================== */
+/*      5.0 Footer
+/* =================================================== */
+
+.social-icon
+{
+    padding-left: 0;
+}
+
+.social-icon li
+{
+    display: inline-block;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.social-icon li a
+{
+    font-size: 15px;
+    line-height: 35px;
+
+    position: relative;
+
+    display: block;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+}
+
+.social-icon li a:hover
+{
+    background: none;
+}
+
+.copyright
+{
+    font-size: 13px;
+
+    margin-top: 90px;
+
+    color: #777;
+}
+
+/* =================================================== */
+/*       6.0 Media queries
+/* =================================================== */
+
+@media (max-width: 992px)
+{
+    .section-container
+    {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 680px)
+{
+    .countdown .day
+    {
+        float: none;
+
+        border: 0;
+    }
+
+    .countdown ul
+    {
+        float: none;
+
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .btn-newsletter
+    {
+        position: static;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .countdown ul li
+    {
+        display: block;
+    }
+}
